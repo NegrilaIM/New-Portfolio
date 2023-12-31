@@ -77,9 +77,6 @@
         font-size: 1.1rem;
         cursor: pointer;
       }
-      .show__menu {
-        bottom: 0;
-      }
       .nav__menu {
         position: fixed;
         bottom: -100%;
@@ -89,13 +86,12 @@
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
-        transition: 0.3s;
+        transition: 0.5s;
         .nav__close {
           display: block;
           position: absolute;
-          right: 1.3rem;
-          bottom: 0.5rem;
-          font-size: 1.5rem;
+          right: 1.1rem;
+          font-size: 1.7rem;
           cursor: pointer;
           color: var(--title-color);
           &:hover {
@@ -115,6 +111,9 @@
             }
           }
         }
+      }
+      .show__menu {
+        bottom: -20px;
       }
     }
   }
