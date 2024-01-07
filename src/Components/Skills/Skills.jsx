@@ -1,5 +1,6 @@
-import Backend from "./Backend";
+import { Appdev } from "./Appdev";
 import { Frontend } from "./Frontend";
+import "./Skills.scss";
 
 const Skills = () => {
   return (
@@ -8,7 +9,7 @@ const Skills = () => {
       <span className="section__subtitle">My technical level</span>
       <div className="skills__container container grid">
         <Frontend />
-        <Backend />
+        <Appdev />
       </div>
     </section>
   );
