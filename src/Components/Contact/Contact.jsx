@@ -101,7 +101,6 @@ export const Contact = () => {
                 className="contact__form-input"
                 placeholder="Insert your name"
                 onChange={handleChange}
-                pattern="[A-Za-z]+"
               />
             </div>
             <div className="contact__form-div">
