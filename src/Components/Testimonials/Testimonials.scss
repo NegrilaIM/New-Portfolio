@@ -23,9 +23,10 @@
     .testimonial__name {
       font-size: var(--normal-font-size);
       font-weight: var(--font-medium);
-      margin-bottom: 10px;
     }
     .testimonial__description {
+      margin-top: 10px;
+      margin-left: 15px;
       font-size: var(--small-font-size);
     }
   }

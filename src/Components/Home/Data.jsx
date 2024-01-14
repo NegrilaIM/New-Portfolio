@@ -10,8 +10,10 @@ const Data = () => {
       </h1>
       <h3 className="home__subtitle">Frontend Developer</h3>
       <p className="home__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magni iure
-        nulla blanditiis voluptatum, atque vel dolorem
+        Proficient Frontend Developer skilled in JavaScript, React, and Flutter,
+        crafting clean and intuitive interfaces to enhance user experiences.
+        Meticulously blending design and functionality for seamless, engaging
+        digital landscapes.
       </p>
       <a href="#contact" className="button button--flex">
         {" "}

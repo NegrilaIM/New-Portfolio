@@ -1,5 +1,5 @@
 import "./About.scss";
-import Resume from "../../assets/John-Cv.pdf";
+import Resume from "../../assets/IulianResume.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -12,11 +12,25 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
-            unde mollitia error inventore blanditiis itaque laborum. Repellendus
-            itaque ullam alias eum labore a
+            Hello! I'm a passionate 28 year old Frontend Developer with over 3
+            years of valuable experience. Currently based in the beautiful city
+            of Iasi. Throughout my career, I've contributed to various projects,
+            leaving my mark on the development of innovative and functional
+            interfaces. With strong skills in technologies like JavaScript,
+            React, Vue and Flutter, I'm dedicated to creating engaging and
+            user-friendly digital experiences. I enjoy exploring and
+            implementing creative solutions to bring value to the projects I
+            work on. I enthusiastically share my knowledge and experience,
+            contributing to the success of every project I'm involved in. Beyond
+            code, I'm always open to new challenges and professional development
+            in a dynamic and innovative environment.
           </p>
-          <a download={Resume} href="" className="button button--flex">
+          <a
+            download="IulianResume.pdf"
+            href={Resume}
+            className="button button--flex"
+            id="portfolio"
+          >
             Download CV
             <svg
               className="button__icon"

@@ -2,6 +2,7 @@ import "./Testimonials.scss";
 import Image1 from "../../assets/testimonial1.png";
 import Image2 from "../../assets/testimonial2.png";
 import Image3 from "../../assets/testimonial3.png";
+import Image4 from "../../assets/testimonial4.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -14,23 +15,34 @@ export const Testimonials = () => {
     {
       id: 1,
       image: Image1,
-      title: "Jhon Doe1",
+      title: "Reutchi Dan",
+      role: "Frontend Developer",
       description:
-        "1a really good job, all aspects of the project were followed step by step and with good results",
+        "My collaboration with Iulian has been consistently excellent. His remarkable front-end skills played a essential role in making a significant contribution to the project's success. Efficient communication and his unwavering dedication to details have made our working experience highly productive.",
     },
     {
       id: 2,
       image: Image2,
-      title: "Jhon Doe2",
+      title: "Chetan Sharma",
+      role: "HCL Tech - SME",
       description:
-        "2a really good job, all aspects of the project were followed step by step and with good results",
+        "Iulian is highly skilled and reliable. Committed to deadlines and efficient task management. Possesses strong listening skills, facilitating clear understanding. Excellent problem-solving and communication abilities. A positive experience collaborating with him.",
     },
     {
       id: 3,
       image: Image3,
-      title: "Jhon Doe3",
+      title: "Iancu Gabriel",
+      role: "Frontend Developer",
       description:
-        "3a really good job, all aspects of the project were followed step by step and with good results",
+        "Working closely with Iulian has been a pleasure. His dedication to excellence is evident in his work. Iulian's technical expertise, combined with his collaborative approach, ensures smooth teamwork. His positive attitude and problem-solving skills make him a valuable teammate.",
+    },
+    {
+      id: 4,
+      image: Image4,
+      title: "Iulia Apostol",
+      role: "HCL Tech - Reporting Manager",
+      description:
+        "Iulian is a standout team member, consistently delivering exceptional results. His strong work ethic, attention to detail, and proactive approach contribute significantly to project success. I appreciate his positive attitude and dedication to achieving outstanding outcomes.",
     },
   ];
 
@@ -58,11 +70,12 @@ export const Testimonials = () => {
         }}
         modules={[Pagination]}
       >
-        {Data.map(({ id, image, title, description }) => {
+        {Data.map(({ id, image, title, role, description }) => {
           return (
             <SwiperSlide className="testimonial__card" key={id}>
               <img src={image} alt="" className="testimonial__img" />
               <h3 className="testimonial__name">{title}</h3>
+              <h5 className="testimonial__role">{role}</h5>
               <p className="testimonial__description">{description}</p>
             </SwiperSlide>
           );
